@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>Oberon's Heavy Industry</name>
-	<packageId></packageId>
+	<packageId>Oberon.Heavy.v0.0</packageId>
 	<supportedVersions>
 		<li>1.1</li>
 	</supportedVersions>
 	<author>Oberon</author>
-	<description>Adds heavy industry buildings and research projects to RimWorld:
+	<description>V0.1
+Adds heavy industry buildings and research projects to RimWorld:
 
 * AC Power, a research project that replaces several vanilla power research projects.
-* Construction crane, a building that must be installed near certain construction projects in order for pawns to work on them.</description>
+* Construction crane, a building that must be installed near certain construction projects in order for pawns to work on them.
+
+Preview icon, and others, made by Freepik from www.flaticon.com
+
+</description>
 
 </ModMetaData>
