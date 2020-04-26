@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase" Name="OBE_InfrastructureBase" Abstract="True">
+		<thingClass>OBE_Heavy.Infrastructure</thingClass>
+		<infrastructureProvided>true</infrastructureProvided>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		<selectable>true</selectable>
+		<designationCategory>Misc</designationCategory>
+		<blockLight>true</blockLight>
+		<building>
+			<canPlaceOverWall>false</canPlaceOverWall>
+			<ai_chillDestination>false</ai_chillDestination>
+		</building>
+	</ThingDef>
+	
+	<ThingDef Class="OBE_Heavy.Scaffolding" ParentName="OBE_InfrastructureBase">
+		<defName>OBE_Scaffolding</defName>
+		<label>Scaffolding</label>
+		<description>A temporary, movable structure that lets workers access elevated or hard-to-reach areas in a construction site.</description>
+		<rotatable>true</rotatable>
+		<blockWind>true</blockWind>
+		<coversFloor>false</coversFloor>
+		<placingDraggableDimensions>1</placingDraggableDimensions>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<staticSunShadowHeight>0.85</staticSunShadowHeight>
+		<graphicData>
+			<texPath>Infrastructure/Scaffolding</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(1,2)</drawSize>
+			<shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+		</stuffCategories>
+		<costStuffCount>3</costStuffCount>
+		<statBases>
+			<MaxHitPoints>100</MaxHitPoints>
+			<Beauty>-5</Beauty>
+			<WorkToBuild>150</WorkToBuild>
+			<Flammability>0.8</Flammability>
+		</statBases>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>3</multiplier>
+			</li>
+		</damageMultipliers>
+	</ThingDef>
+</Defs>

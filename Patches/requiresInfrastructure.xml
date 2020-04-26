@@ -1,0 +1,10 @@
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>Defs/ThingDef[defName="WoodFiredGenerator"]</xpath>
+        <value>
+            <li Class="OBE_Heavy.requiresInfrastructure">
+                <reqInf>true</reqInf>
+            </li>
+        </value>
+    </Operation>
+</Patch>
