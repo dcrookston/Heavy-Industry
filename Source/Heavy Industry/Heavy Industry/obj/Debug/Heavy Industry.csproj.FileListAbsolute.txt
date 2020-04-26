@@ -1,0 +1,4 @@
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\Heavy-Industry\Source\Heavy Industry\Heavy Industry\obj\Debug\Heavy Industry.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\Heavy-Industry\Source\Heavy Industry\Heavy Industry\obj\Debug\Heavy Industry.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\Heavy-Industry\Assemblies\OBE_Heavy.dll
+C:\Program Files (x86)\Steam\SteamApps\common\RimWorld\Mods\Heavy-Industry\Source\Heavy Industry\Heavy Industry\obj\Debug\OBE_Heavy.dll
