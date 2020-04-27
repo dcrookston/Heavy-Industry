@@ -2,8 +2,13 @@
 <Defs>
 
 	<ThingDef ParentName="BuildingBase" Name="OBE_InfrastructureBase" Abstract="True">
+		<defName>OBE_InfrastructureBase</defName>
 		<thingClass>OBE_Heavy.Infrastructure</thingClass>
-		<infrastructureProvided>true</infrastructureProvided>
+		<modExtensions>
+            <li Class="OBE_Heavy.buildingProvidesInfrastructure">
+                <infrastructureProvided>true</infrastructureProvided>
+            </li>
+		</modExtensions>
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>Impassable</passability>
 		<fillPercent>1</fillPercent>
@@ -17,7 +22,7 @@
 		</building>
 	</ThingDef>
 	
-	<ThingDef Class="OBE_Heavy.Scaffolding" ParentName="OBE_InfrastructureBase">
+	<ThingDef ParentName="OBE_InfrastructureBase">
 		<defName>OBE_Scaffolding</defName>
 		<label>Scaffolding</label>
 		<description>A temporary, movable structure that lets workers access elevated or hard-to-reach areas in a construction site.</description>
@@ -26,7 +31,6 @@
 		<coversFloor>false</coversFloor>
 		<placingDraggableDimensions>1</placingDraggableDimensions>
 		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-		<staticSunShadowHeight>0.85</staticSunShadowHeight>
 		<graphicData>
 			<texPath>Infrastructure/Scaffolding</texPath>
 			<graphicClass>Graphic_Multi</graphicClass>
@@ -42,7 +46,7 @@
 			<MaxHitPoints>100</MaxHitPoints>
 			<Beauty>-5</Beauty>
 			<WorkToBuild>150</WorkToBuild>
-			<Flammability>0.8</Flammability>
+			<Flammability>1.5</Flammability>
 		</statBases>
 		<damageMultipliers>
 			<li>

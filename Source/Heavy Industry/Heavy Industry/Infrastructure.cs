@@ -13,10 +13,14 @@ namespace OBE_Heavy
         //public string infrastructureRequired;
     }
 
-    abstract class Infrastructure : ThingDef
+    public class buildingProvidesInfrastructure : DefModExtension
     {
-        public bool InfrastructureProvided;
-        //public int SupportRange;
+        public bool infrastructureProvided;
+    }
+
+    public class Infrastructure : Building
+    {
+        bool providesInfrastructure => def.GetModExtension<buildingProvidesInfrastructure>().infrastructureProvided;
     }
    // public class Scaffolding : Infrastructure
    // {
